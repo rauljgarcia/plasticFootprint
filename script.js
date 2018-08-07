@@ -10,7 +10,7 @@ var weight20 = (.41 * .0625) * pbottlesYear;
 var weight24 = (.5 * .0625) * pbottlesYear;
 var weight33 = (.7 * .0625) * pbottlesYear;
 
-var worldPeople = 7442000000 //in billions
+var worldPeople = 7442000000
 
 var worldPeopleweight12 = Math.round(worldPeople * weight12) / 2000
 var worldPeopleweight16 = Math.round(worldPeople * weight16) / 2000
@@ -20,21 +20,20 @@ var worldPeopleweight33 = Math.round(worldPeople * weight33) / 2000
 
 var now = 2018;
 var decompYear = now + 450;
+var context1 = ' pounds of plastic per year, in water bottles.\n\nFor context, if everyone used this amount, approximately '
+var context2 =  ' tons of plastic would be used yearly, in water bottles.'
+var decomp = '\n\nIf thrown away, it will be decomposed in the year ' + decompYear +'.'
 
 if (pbottlesSize == 12) {
-    alert('You use ' + weight12 + ' pounds of plastic per year, in water bottles.\n\nFor context, if everyone used this amount, approximately ' + worldPeopleweight12 + ' tons of plastic would be used yearly, in water bottles.');
+    alert('You use ' + weight12.toFixed(2) + context1 + worldPeopleweight12 + context2 + decomp);
 } else if (pbottlesSize == 16) {
-    alert('You use ' + weight12 + ' pounds of plastic per year, in water bottles.\n\nFor context, if everyone used this amount, approximately ' + worldPeopleweight16 + ' tons of plastic would be used yearly, in water bottles.');
+    alert('You use ' + weight16.toFixed(2) + context1 + worldPeopleweight16 + context2 + decomp);
 } else if (pbottlesSize == 20) {
-    alert('You use ' + weight20 + ' pounds of plastic per year, in water bottles.\n\nFor context, if everyone used this amount, approximately ' + worldPeopleweight20 + ' tons of plastic would be used yearly, in water bottles.');
+    alert('You use ' + weight20.toFixed(2) + context1 + worldPeopleweight20 + context2 + decomp);
 } else if (pbottlesSize == 24) {
-    alert('You use ' + weight24 + ' pounds of plastic per year, in water bottles.\n\nFor context, if everyone used this amount, approximately ' + worldPeopleweight24 + ' tons of plastic would be used yearly, in water bottles.');
+    alert('You use ' + weight24.toFixed(2) + context1 + worldPeopleweight24 + context2 + decomp);
 } else if (pbottlesSize == 33) {
-    alert('You use ' + weight33 + ' pounds of plastic per year, in water bottles.\n\nFor context, if everyone used this amount, approximately ' + worldPeopleweight33 + ' tons of plastic would be used yearly, in water bottles.');
+    alert('You use ' + weight33.toFixed(2) + context1 + worldPeopleweight33 + context2 + decomp);
+} else {
+    alert('Invalid Input')
 }
-
-alert('If thrown away, it will be decomposed in the year ' + decompYear +'.');
-
-//700 to decompose
-//grams to puounds = g * .0022
-//oz to lbs = oz * .0625
