@@ -1,10 +1,32 @@
+<!--
+CSCI 1300 CHOWDHURY
+Final Project by Raul Garcia
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Plastic Footprint</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1>Plastic Footprint</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Plastic Footprint</a>
+          <img src="https://i.pinimg.com/236x/6c/a4/f2/6ca4f29c41471159ecbe7685638b3e60--free-icon-footprints.jpg" class="footprint">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-2">Plastic Footprint</h1>
+        <p class="lead">See what yours is.</p>
+        <!-- <button class="btn btn-outline-danger">Start Now</button> -->
+        <button id="bgnBtn" onclick="promptMe()">Start Now</button>
+      </div>
+    </div>
 </body>
-<script src="script.js"></script>
+<script src="script_Waterbottle.js"></script>
 </html>

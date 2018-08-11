@@ -1,3 +1,5 @@
+function promptMe(){
+
 var pbottlesWeek = prompt('Enter the number of plastic water bottles you use in an average 7-day week');
 
 var pbottlesSize = prompt('What is the typical-sized water bottle you use, in ounces? (i.e. 12, 16, 20, 24, 33 (1 liter)');
@@ -36,4 +38,6 @@ if (pbottlesSize == 12) {
     alert('You use ' + weight33.toFixed(2) + context1 + worldPeopleweight33 + context2 + decomp);
 } else {
     alert('Invalid Input')
+}
+
 }
