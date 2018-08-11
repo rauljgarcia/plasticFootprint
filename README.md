@@ -14,7 +14,7 @@ Lastly, it returns the year that the plastic would be fully decomposed if placed
 
 This project is partially complete.  To date, only water bottles have been added to the functionality.
 
-The goal was to use images and graphics to represent the various sizes and quantities of the items.  Other items were intended to be used and added together, such as:
+The goal is to use images and graphics to represent the various sizes and quantities of the items.  Other items will be used and added together, such as:
 - Single use straws
 - Single use food storage like Ziplock bags
 - Fast food / carryout containers
